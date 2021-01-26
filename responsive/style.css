@@ -1,3 +1,81 @@
-body {
-  background: blue;
+* {
+  padding: 0;
+  margin: 0;
 }
+body {
+  background: lightblue;
+}
+
+p {
+  border: 3px solid red;
+  padding: 10px;
+  margin: 5px;
+  background-color: yellow;
+}
+
+span {
+  margin: 50px;
+}
+
+.center {
+  text-align: center;
+}
+
+section {
+  height: 100px;
+  background: green;
+  text-align: center;
+}
+
+.centered {
+  width: 30%;
+  height: 70%;
+  background: blue;
+  color: white;
+  margin: 0 auto;
+}
+
+/* (Desktop First Approach) */
+header {
+  background-color: violet;
+  height: 300px;
+  width: 100vw;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+@media (max-width: 1100px) {
+  header {
+    max-width: 700px;
+    background-color: black;
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    max-width: 500px;
+    background-color: salmon;
+  }
+}
+
+@media (max-width: 550px) {
+  header {
+    display: none;
+  }
+
+  nav {
+    height: 500px;
+    background: white;
+  }
+}
+/* 
+padding and margin: clockwise -> top, right, bottom, left
+padding margin: top, left and right, bottom
+padding margin: top bottom, left right
+padding margin: top right left bottom (order here doesnt matter)
+*/
+
+/* 
+absolute: px, cm, in, mm, pts, 
+relative: % (percentage of parent container), rem(value * html font size), em(value * parent container font-size), vh(% of the browser window height) and vw(% of the browser window width)
+*/
